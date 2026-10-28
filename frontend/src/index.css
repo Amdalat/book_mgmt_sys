@@ -1,0 +1,66 @@
+body{
+  background-color: rgba(153, 152, 152, 0.621);
+}
+
+.py2px5{
+  padding: 2rem 5rem;
+}
+
+.py2{
+  padding: 2rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+.middle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.middlecol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 2rem;
+  width: 100%;
+}
+
+.rowflexcenter{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gap2{
+  display: flex;
+  gap: 2rem;
+}
+
+
+.rowflex{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bookcard{
+  flex: 0 0 200px;
+}
+
+.requestcard{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 0.5rem 2rem;
+}
