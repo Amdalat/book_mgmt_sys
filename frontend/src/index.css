@@ -2,6 +2,19 @@ body{
   background-color: rgba(153, 152, 152, 0.621);
 }
 
+.btnn{
+  font-size: 1rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(13, 110, 253);
+  color: white;
+}
+
+.bookimg{
+  height: 450px;
+}
+
 .py2px5{
   padding: 2rem 5rem;
 }
@@ -52,8 +65,26 @@ a{
   flex-wrap: wrap;
 }
 
+.formcss{
+  width: 400px; 
+  padding:2rem;
+}
+
 .bookcard{
-  flex: 0 0 200px;
+  background-color: white;
+  flex: 0 0 250px;
+}
+
+.bookcardimg{
+  width: 100%; 
+  height: 200px;
+  background-color: grey; 
+  border-radius: 5px 5px 0 0;
+}
+
+.bookcardbody{
+  padding: 1rem;
+
 }
 
 .requestcard{
@@ -64,4 +95,67 @@ a{
   border-radius: 10px;
   border: 1px solid grey;
   padding: 0.5rem 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .cardcss{
+    width: 100%; 
+    padding:1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .py2px5{
+    padding: 1rem 2rem;
+  }
+  .py2{
+    padding: 1rem;
+  }
+
+  .middlecol{
+    gap: 1rem;
+  }
+
+  .middlecol .rowflex{
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .bookcardbody{
+    padding: 0.5rem;
+  }
+
+  .bookcard{
+    background-color: white;
+    flex: 0 0 150px;
+    font-size: smaller;
+
+    h5{
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+    h6{
+      font-size: 0.8rem;
+      margin-bottom: 0.3rem;
+    }
+    p{
+      font-size: 0.6rem;
+      margin-bottom: 0.3rem;
+    }
+  }
+
+
+  .bookcardimg{
+    height: 130px;
+  }
+
+  .btnn{
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  /* a{
+    font-size: 0.7rem;
+  } */
 }

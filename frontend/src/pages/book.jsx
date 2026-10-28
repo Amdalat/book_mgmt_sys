@@ -163,19 +163,19 @@ function BookInfo() {
                         </div>   
                     ):(
                         <div className="row">
-                            <div className="col-3">
+                            <div className="col-12 py-4 col-md-4">
+                            {/* <div className="col-3 py-4 col-md-4"> */}
                                 {/* <FontAwesomeIcon icon={faFile}/> */}
                                 
-                                {book.bookcover ? <img src={`/uploads/books/${book.bookcover}`} class="card-img-top" alt={`${book.title}`} height={"450px"}/> : <div style={{ backgroundColor:"grey", width:"100%", height:"450px"  }}></div>}
+                                {book.bookcover ? <img src={`/uploads/books/${book.bookcover}`} class="card-img-top bookimg" alt={`${book.title}`} height={"450px"}/> : <div style={{ backgroundColor:"grey", width:"100%", height:"450px" }}></div>}
                             </div>
 
-                            <div className="col-9 py-4">
+                            <div className="col-12 py-4 col-md-8">
                                 <h2>{book.title.toUpperCase()}</h2> <br/>
                                 <h3>{book.author.username}</h3> <br/>
                                 <h5>{book.description}</h5> <br/>
 
                                 <div className="rowflex">
-                                    {/* put condition to change to requested btn */}
                                     {console.log(request)}
                                     {user?._id === book.author?._id || request?.status === "accepted" ? (
                                         <button class="btn btn-success" onClick={() => setReadBook(true)}>Read</button>

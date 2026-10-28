@@ -95,8 +95,9 @@ function SigninForm() {
     };
 
     return(
-        <div className="middle">
-            <div class="card" style={{ width:"50%", minwidth: "500px", padding:"2rem"}}>
+        <div className="middle" style={{ alignItems:"flex-start", maxHeight:"340px" }}>
+            {/* <div class="card w-100 w-ld-75"> */}
+            <div class="card formcss" >
                 <form class="card-body">
                     {signin ? <h3 style={{ color:"grey" }}>SIGNIN</h3> : <h3 style={{ color:"grey" }}>SIGNUP</h3> }
                     
@@ -173,8 +174,10 @@ function BookForm() {
     };
 
     return(
-        <div className="middle">
-            <div class="card" style={{ width:"50%", maxwidth: "500px", padding:"1rem 2rem" }}>
+        <div className="middle" style={{ alignItems:"flex-start" }}>
+            <div class="card formcss">
+        {/* <div className="middle">
+            <div class="card" style={{ width:"50%", maxwidth: "500px", padding:"1rem 2rem" }}> */}
                 <form class="card-body">
                     <h3 style={{ color:"grey" }}>Upload Book</h3>
                     

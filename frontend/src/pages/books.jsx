@@ -69,22 +69,27 @@ function Books({page}) {
             <div className="rowflex">
                 {(books.length !== 0) ? books.map((book, index)=>{
                 return(
-                    <div class="card" key={index} style={{ backgroundColor:"white", flex:"0 0 250px", }}>
-                        {book.bookcover ? <img src={`/uploads/books/${book.bookcover}`} class="card-img-top" alt={`${book.title}`} width={"100%"} height={"200px"}/> : <div style={{ backgroundColor:"grey", width:"100%", height:"200px"  }}></div>}
+                    <div class="card bookcard" key={index}>
+                        {book.bookcover ? <img src={`/uploads/books/${book.bookcover}`} class="card-img-top bookcardimg" alt={`${book.title}`}/> : <div className="bookcardimg"></div>}
                         
-                        <div class="card-body">
+                        {/* <div class="card-body"> */}
+                        <div class="bookcardbody">
+                            <h5>{book.title}</h5>
+                            <h6>{book.author.username}</h6>
+                            <p>{book.description}</p>
+                            <Link to={`/book/${book._id}`}><button class="btnn">Details</button></Link>
+                        </div>
+                        {/* <div class="card-body">
                             <h5 class="card-title">{book.title}</h5>
                             <h6 class="card-text">{book.author.username}</h6>
                             <p class="card-text">{book.description}</p>
-                            <Link to={`/book/${book._id}`}><button class="btn btn-primary">Details</button></Link>
-                        </div>
+                            <Link to={`/book/${book._id}`}><button class="btn btn-primary btnn">Details</button></Link>
+                        </div> */}
                     </div>                    
                 )
             }) : <h3>No Books...</h3> }
 
             </div>
-
-
         </div>
     )
 
