@@ -167,7 +167,7 @@ function BookInfo() {
                             {/* <div className="col-3 py-4 col-md-4"> */}
                                 {/* <FontAwesomeIcon icon={faFile}/> */}
                                 
-                                {book.bookcover ? <img src={`/uploads/books/${book.bookcover}`} class="card-img-top bookimg" alt={`${book.title}`} height={"450px"}/> : <div style={{ backgroundColor:"grey", width:"100%", height:"450px" }}></div>}
+                                {book.bookcover ? <img src={`/uploads/books/${book.bookcover}`} class="card-img-top bookimg" alt={`${book.title}`}/> : <div class="bookimg"></div>}
                             </div>
 
                             <div className="col-12 py-4 col-md-8">

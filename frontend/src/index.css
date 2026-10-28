@@ -12,6 +12,7 @@ body{
 }
 
 .bookimg{
+  background-color: grey;
   height: 450px;
 }
 
@@ -145,7 +146,6 @@ a{
     }
   }
 
-
   .bookcardimg{
     height: 130px;
   }
@@ -153,6 +153,10 @@ a{
   .btnn{
     font-size: 0.7rem;
     padding: 0.3rem 0.5rem;
+  }
+
+  .bookimg{
+    height: 350px;
   }
 
   /* a{

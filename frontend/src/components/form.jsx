@@ -201,7 +201,7 @@ function BookForm() {
 
                     <div class="mb-3">
                         <label for="password" class="form-label">Book</label>
-                        <input type="file" name="bookfile" accept="image/*" onChange={e => setBookfile(e.target.files[0])} class="form-control" id="exampleFormControlInput1"/>
+                        <input type="file" name="bookfile" accept=".pdf,.doc,.docx" onChange={e => setBookfile(e.target.files[0])} class="form-control" id="exampleFormControlInput1"/>
                     </div>
 
                     <button class="btn btn-primary" onClick={handleUpload}>Upload</button>
