@@ -96,7 +96,7 @@ function SigninForm() {
 
     return(
         <div className="middle">
-            <div class="card" style={{ width: "500px", padding:"2rem" }}>
+            <div class="card" style={{ width:"50%", minwidth: "500px", padding:"2rem"}}>
                 <form class="card-body">
                     {signin ? <h3 style={{ color:"grey" }}>SIGNIN</h3> : <h3 style={{ color:"grey" }}>SIGNUP</h3> }
                     
@@ -174,7 +174,7 @@ function BookForm() {
 
     return(
         <div className="middle">
-            <div class="card" style={{ marginTop:"60px", width: "500px", padding:"1rem 2rem" }}>
+            <div class="card" style={{ width:"50%", maxwidth: "500px", padding:"1rem 2rem" }}>
                 <form class="card-body">
                     <h3 style={{ color:"grey" }}>Upload Book</h3>
                     
